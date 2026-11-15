@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Assessment de seguridad Microsoft 365 | Todo en la Nube</title>
+<meta name="description" content="Diagnóstico gratuito y no invasivo de seguridad Microsoft 365 (Defender, Intune y Purview) para empresas con más de 100 usuarios.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Símbolos reutilizables (trazo, sin relleno) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="bean" viewBox="-12 -16 24 32">
+    <ellipse cx="0" cy="0" rx="9" ry="13" transform="rotate(20)"/>
+    <path d="M-3 -11C5 -4 -5 4 3 11" transform="rotate(20)"/>
+  </symbol>
+  <symbol id="cupmini" viewBox="-10 -84 130 170">
+    <path d="M0 0H90C90 45 70 70 45 70S0 45 0 0Z"/>
+    <path d="M90 12C115 10 115 48 82 50"/>
+    <path d="M-12 80C22 94 68 94 102 80"/>
+    <path d="M25 -8C14 -24 36 -32 25 -50S18 -66 25 -78">
+      <animate attributeName="d" dur="3.2s" repeatCount="indefinite" values="M25 -8C14 -24 36 -32 25 -50S18 -66 25 -78;M25 -8C36 -24 14 -32 25 -50S32 -66 25 -78;M25 -8C14 -24 36 -32 25 -50S18 -66 25 -78"/>
+    </path>
+    <path d="M45 -8C34 -24 56 -32 45 -50S38 -66 45 -78">
+      <animate attributeName="d" dur="3.2s" begin="-1s" repeatCount="indefinite" values="M45 -8C34 -24 56 -32 45 -50S38 -66 45 -78;M45 -8C56 -24 34 -32 45 -50S52 -66 45 -78;M45 -8C34 -24 56 -32 45 -50S38 -66 45 -78"/>
+    </path>
+    <path d="M65 -8C54 -24 76 -32 65 -50S58 -66 65 -78">
+      <animate attributeName="d" dur="3.2s" begin="-2s" repeatCount="indefinite" values="M65 -8C54 -24 76 -32 65 -50S58 -66 65 -78;M65 -8C76 -24 54 -32 65 -50S72 -66 65 -78;M65 -8C54 -24 76 -32 65 -50S58 -66 65 -78"/>
+    </path>
+  </symbol>
+</svg>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Todo en la Nube">
+      <svg viewBox="0 0 90 60" fill="currentColor" aria-hidden="true"><path d="M14 36a10 10 0 0 1 10-10h2a20 20 0 0 1 38-2 11 11 0 0 1 4 21H22A10 10 0 0 1 14 36Z"/><g stroke="var(--bg)" stroke-width="2.5"><path d="M34 24v30M42 18v36M50 22v32M58 28v26"/></g></svg>
+      <b>TODO EN<span>LA NUBE</span></b>
+      <span class="partner">Microsoft<br>Solutions Partner</span>
+    </a>
+    <a class="btn btn-navy sm" href="#diagnostico">Solicitar Assessment</a>
+  </div>
+</nav>
+
+<main id="top">
+<section class="hero">
+  <svg class="bean-d b1" viewBox="-12 -16 24 32" aria-hidden="true"><use href="#bean" x="-12" y="-16" width="24" height="32"/></svg>
+  <svg class="bean-d b2" viewBox="-12 -16 24 32" aria-hidden="true"><use href="#bean" x="-12" y="-16" width="24" height="32"/></svg>
+  <svg class="bean-d b3" viewBox="-12 -16 24 32" aria-hidden="true"><use href="#bean" x="-12" y="-16" width="24" height="32"/></svg>
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Evaluación/Assessment de seguridad · Para tu empresa sin límite de personal</p>
+      <h1>Ingeniero, ¿tienes tiempo libre para proteger datos y dispositivos 24/7 <em>uno a uno?</em></h1>
+      <p class="hero-lead">Tómate un respiro, Inge: revisamos tus equipos, correos y datos en busca de vulnerabilidades sin quitarle tiempo a tu equipo.</p>
+      <div class="cta-row">
+        <a class="btn btn-brown" href="#diagnostico">Solicitar mi Assessment gratuito</a>
+        <a class="btn btn-outline" data-wa target="_blank" rel="noopener" href="#">Hablar por WhatsApp</a>
+      </div>
+      <p class="trust">Sin detener tu operación · 1 por organización</p>
+    </div>
+
+    <div class="visual">
+      <span class="chip c1"><i></i>Alertas unificadas</span>
+      <span class="chip c2"><i></i>Dispositivos en regla</span>
+      <span class="chip c3"><i></i>Datos blindados</span>
+
+      <svg id="pc" class="scene" viewBox="0 0 460 400" role="img" aria-label="Computadora que muestra la palabra Security y luego OK, con una taza de café humeante en la esquina inferior derecha">
+        <!-- Monitor -->
+        <g class="line">
+          <rect x="30" y="30" width="320" height="214" rx="18"/>
+          <rect x="48" y="48" width="284" height="178" rx="8"/>
+          <path d="M190 244v46M130 296h120M120 296c0-6 6-6 12-6h116c6 0 12 0 12 6"/>
+          <!-- Escudo -->
+          <path class="shield" d="M104 100 78 110v22c0 18 11 30 26 36 15-6 26-18 26-36v-22Z"/>
+          <path id="check" class="check" d="M92 134l9 9 17-19"/>
+        </g>
+        <text id="screen" class="screen-text" x="148" y="152"><tspan id="typed"></tspan><tspan class="caret">|</tspan></text>
+        <!-- Barra de la pantalla -->
+        <g class="line thin"><path d="M64 70h26M96 70h14"/></g>
+
+        <!-- Taza abajo a la derecha -->
+        <g transform="translate(326 262)">
+          <g class="line cupline">
+            <path class="cupfill" d="M0 0H90C90 45 70 70 45 70S0 45 0 0Z"/>
+            <path d="M90 12C115 10 115 48 82 50"/>
+            <path d="M-12 76C22 90 68 90 102 76"/>
+            <path d="M18 18c14 10 40 10 54 0"/>
+            <path class="steam" d="M25 -8C14 -24 36 -32 25 -50S18 -66 25 -78">
+              <animate attributeName="d" dur="3.2s" repeatCount="indefinite" values="M25 -8C14 -24 36 -32 25 -50S18 -66 25 -78;M25 -8C36 -24 14 -32 25 -50S32 -66 25 -78;M25 -8C14 -24 36 -32 25 -50S18 -66 25 -78"/>
+            </path>
+            <path class="steam s2" d="M45 -8C34 -24 56 -32 45 -50S38 -66 45 -78">
+              <animate attributeName="d" dur="3.2s" begin="-1s" repeatCount="indefinite" values="M45 -8C34 -24 56 -32 45 -50S38 -66 45 -78;M45 -8C56 -24 34 -32 45 -50S52 -66 45 -78;M45 -8C34 -24 56 -32 45 -50S38 -66 45 -78"/>
+            </path>
+            <path class="steam s3" d="M65 -8C54 -24 76 -32 65 -50S58 -66 65 -78">
+              <animate attributeName="d" dur="3.2s" begin="-2s" repeatCount="indefinite" values="M65 -8C54 -24 76 -32 65 -50S58 -66 65 -78;M65 -8C76 -24 54 -32 65 -50S72 -66 65 -78;M65 -8C54 -24 76 -32 65 -50S58 -66 65 -78"/>
+            </path>
+          </g>
+        </g>
+        <!-- Granos en el plato -->
+        <g class="line thin" transform="translate(392 336) scale(.6)"><use href="#bean" x="-12" y="-16" width="24" height="32"/></g>
+        <g class="line thin" transform="translate(410 330) scale(.5) rotate(40)"><use href="#bean" x="-12" y="-16" width="24" height="32"/></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="ribbon" aria-label="Beneficios clave">
+  <div class="wrap">
+    <span><svg class="rb" viewBox="-12 -16 24 32" aria-hidden="true"><use href="#bean" x="-12" y="-16" width="24" height="32"/></svg>Tú encárgate de tu café, nosotros auditamos tus +100 licencias</span>
+    <span><svg class="rb" viewBox="-12 -16 24 32" aria-hidden="true"><use href="#bean" x="-12" y="-16" width="24" height="32"/></svg>Descubre las herramientas de seguridad que ya pagas y no usas</span>
+    <span><svg class="rb" viewBox="-12 -16 24 32" aria-hidden="true"><use href="#bean" x="-12" y="-16" width="24" height="32"/></svg>Diagnóstico sin frenar la operación de nadie</span>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="head">
+      <svg class="mini" viewBox="-14 -86 134 176" aria-hidden="true"><use href="#cupmini" x="-10" y="-84" width="130" height="170"/></svg>
+      <h2>¿Cuántas tazas de café se han enfriado mientras apagas fuegos en TI?</h2>
+      <p>Amenazas en correos, laptops sin control y datos sensibles sin reglas: detecta tus puntos ciegos antes de que se conviertan en una emergencia.</p>
+    </div>
+    <div class="grid2">
+      <article class="pain"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 8 3 8H3s3-1 3-8"/><path d="M10 20a2 2 0 0 0 4 0"/></svg><h3>Ruido de alertas</h3><p>¿Tu equipo invierte horas filtrando falsos positivos para encontrar una amenaza real?</p></article>
+      <article class="pain"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20M8 4v12"/></svg><h3>Inventario manual</h3><p>¿Sigues controlando laptops y celulares en un Excel desactualizado o configurando uno por uno?</p></article>
+      <article class="pain"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12Z"/><circle cx="12" cy="12" r="3"/></svg><h3>Puntos ciegos en datos</h3><p>¿Sabes exactamente dónde vive la información sensible y quién tiene acceso a ella hoy?</p></article>
+      <article class="pain"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2ZM9 4v14M15 6v14"/></svg><h3>Falta de hoja de ruta</h3><p>¿Tienes claro qué vulnerabilidad urge cerrar primero sin frenar la operación?</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="head">
+      <h2>Tres pilares, un solo diagnóstico</h2>
+      <p>Evalúa tus dispositivos, identidades e información sin tecnicismos. Primero audita lo que ya tienes activo en tus planes Business Premium, E3 o E5.</p>
+    </div>
+    <div class="grid3">
+      <article class="pillar"><small>Detección y respuesta</small><h3>Microsoft Defender</h3><h4>Bloquea antes de que escale</h4><p>Frena ransomware y correos maliciosos antes de que se conviertan en un incidente.</p></article>
+      <article class="pillar"><small>Control de dispositivos</small><h3>Microsoft Intune</h3><h4>Cada equipo, bajo control</h4><p>Automatiza despliegues y protege celulares y laptops dentro y fuera de la oficina.</p></article>
+      <article class="pillar"><small>Información</small><h3>Microsoft Purview</h3><h4>Tus datos, con reglas claras</h4><p>Evita fugas de datos por error, renuncias o uso sin reglas de inteligencia artificial.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="friction">
+  <div class="wrap">
+    <div class="grid3">
+      <div class="fr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg><h3>100 % no invasivo</h3><p>Analizamos la postura de seguridad sin interrumpir a tus usuarios ni afectar el rendimiento.</p></div>
+      <div class="fr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg><h3>Compatible con tu entorno</h3><p>Funciona con planes Business Premium, E3 o E5, incluso si hoy convives con Google Workspace.</p></div>
+      <div class="fr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5M9 14l2 2 4-4"/></svg><h3>Entregable accionable</h3><p>Recibes un mapa claro de mejoras prioritarias para presentar a dirección.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="close" id="diagnostico">
+  <svg class="bean-d b4" viewBox="-12 -16 24 32" aria-hidden="true"><use href="#bean" x="-12" y="-16" width="24" height="32"/></svg>
+  <svg class="bean-d b5" viewBox="-12 -16 24 32" aria-hidden="true"><use href="#bean" x="-12" y="-16" width="24" height="32"/></svg>
+  <div class="wrap">
+    <div>
+      <h2>La tranquilidad se construye. Queremos darle el cimiento a tu seguridad.</h2>
+      <p class="lead">La seguridad de tu empresa no debería depender de apagar fuegos todo el día. Identifica tus puntos ciegos mediante un diagnóstico gratuito y no invasivo con Todo en la Nube.</p>
+      <div class="extras">
+        <b>Al calificar, también puedes sumar:</b>
+        <ul><li>Security Backup Assessment</li><li>Talleres prácticos de Copilot y Power BI para tu equipo</li></ul>
+      </div>
+    </div>
+    <div id="formbox">
+      <form id="lead" novalidate>
+        <div class="fields">
+          <h3>Agenda tu diagnóstico gratuito</h3>
+          <div class="f"><label for="n">Nombre completo</label><input id="n" name="nombre" autocomplete="name" required><div class="err">Escribe tu nombre completo.</div></div>
+          <div class="f"><label for="e">Correo</label><input id="e" name="correo" type="email" autocomplete="email" required><div class="err">Escribe un correo válido.</div></div>
+          <div class="f"><label for="p">Prioridad principal</label>
+            <select id="p" name="prioridad"><option>Diagnóstico integral</option><option>Defender</option><option>Intune</option><option>Purview</option></select></div>
+          <button class="btn btn-brown" type="submit">Agendar mi diagnóstico gratuito</button>
+          <p class="or">o si prefieres, escríbenos directo</p>
+          <a class="btn btn-outline" style="width:100%" data-wa target="_blank" rel="noopener" href="#">Continuar por WhatsApp</a>
+        </div>
+        <div class="ok" role="status"><h3>¡Listo! Ya está en camino tu café</h3><p>Recibimos tus datos. Te contactaremos pronto para agendar tu diagnóstico gratuito.</p></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head"><h2>Preguntas frecuentes</h2></div>
+    <div class="faq">
+      <details><summary>¿A qué nos referimos con +100 licencias?</summary><p>Significa contar con al menos 100 cuentas de usuario activas en planes empresariales de Microsoft 365 (como Business Premium, E3 o E5), donde el volumen de correos, equipos y datos ya exige una postura de seguridad estructurada.</p></details>
+      <details><summary>¿Qué pasa si actualmente usamos Google Workspace (Gmail)?</summary><p>No pierdes tus correos ni tienes que detener la operación. Podemos trabajar en convivencia (mantienes Gmail y proteges equipos y datos con Microsoft) o realizar una migración sin interrupciones conservando todo tu historial.</p></details>
+      <details><summary>¿El assessment frena la operación de la empresa?</summary><p>En absoluto. Es un análisis 100 % no invasivo y de solo lectura. Tus usuarios siguen trabajando con normalidad mientras generamos un reporte accionable con las prioridades técnicas que sí requieren atención.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="domain" href="https://todoenlanube.mx/" target="_blank" rel="noopener">todoenlanube.mx</a>
+    <span>1 asesoría gratuita por tu proyecto</span>
+  </div>
+</footer>
+
+<a class="fab" data-wa target="_blank" rel="noopener" href="#" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11 19.7L3 29l6.5-1.7A13 13 0 1 0 16 3Zm0 23.6c-2 0-3.9-.6-5.5-1.6l-.4-.2-3.8 1 1-3.7-.3-.4A10.6 10.6 0 1 1 16 26.600Zm5.8-7.900c-.3-.2-1.900-.9-2.200-1-.3-.1-.5-.2-.7.2-.2.300-.8 1-1 1.200-.2.200-.4.200-.7.100-.3-.2-1.400-.5-2.600-1.600-1-.9-1.600-1.900-1.800-2.200-.2-.3 0-.5.100-.7l.5-.5c.1-.2.200-.3.300-.5.100-.2 0-.4 0-.6l-1-2.300c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.100-.9.400-.3.300-1.200 1.100-1.200 2.800s1.200 3.200 1.400 3.500c.2.200 2.400 3.700 5.800 5.100 3.400 1.300 3.400.9 4 .9.600-.1 1.900-.8 2.200-1.600.3-.8.300-1.400.2-1.600-.1-.1-.3-.2-.6-.4Z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
