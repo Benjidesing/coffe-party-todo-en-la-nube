@@ -171,9 +171,13 @@
         <div class="fields">
           <h3>Agenda tu diagnóstico gratuito</h3>
           <div class="f"><label for="n">Nombre completo</label><input id="n" name="nombre" autocomplete="name" required><div class="err">Escribe tu nombre completo.</div></div>
-          <div class="f"><label for="e">Correo</label><input id="e" name="correo" type="email" autocomplete="email" required><div class="err">Escribe un correo válido.</div></div>
-          <div class="f"><label for="p">Prioridad principal</label>
-            <select id="p" name="prioridad"><option>Diagnóstico integral</option><option>Defender</option><option>Intune</option><option>Purview</option></select></div>
+          <div class="f"><label for="e">Correo electrónico</label><input id="e" name="correo" type="email" autocomplete="email" required><div class="err">Escribe un correo válido.</div></div>
+          <div class="row">
+            <div class="f"><label for="t">Teléfono</label><input id="t" name="telefono" type="tel" inputmode="tel" autocomplete="tel" required><div class="err">Escribe un teléfono de 10 dígitos.</div></div>
+            <div class="f"><label for="x">Extensión</label><input id="x" name="extension" inputmode="numeric" placeholder="Opcional" autocomplete="off"></div>
+          </div>
+          <div class="f"><label for="p">Puesto de trabajo</label><input id="p" name="puesto" autocomplete="organization-title" required><div class="err">Indica tu puesto de trabajo.</div></div>
+          <div class="f consent"><label class="check"><input type="checkbox" id="k" name="consentimiento" required><span>Acepto el uso de mis datos personales conforme al <a id="privacy" href="#" target="_blank" rel="noopener">aviso de privacidad</a>.</span></label><div class="err">Debes aceptar el aviso de privacidad para continuar.</div></div>
           <button class="btn btn-brown" type="submit">Agendar mi diagnóstico gratuito</button>
           <p class="or">o si prefieres, escríbenos directo</p>
           <a class="btn btn-outline" style="width:100%" data-wa target="_blank" rel="noopener" href="#">Continuar por WhatsApp</a>
