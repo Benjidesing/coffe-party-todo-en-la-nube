@@ -1,7 +1,7 @@
 /* ===== Configuración ===== */
 var WA_NUMBER = '5215500000000'; // ← cambia por tu número (código de país + número, sin + ni espacios)
 var WA_TEXT = 'Hola, quiero mi assessment gratuito de seguridad Microsoft';
-var PRIVACY_URL = 'https://todoenlanube.mx/'; // ← pon aquí la URL de tu aviso de privacidad
+var PRIVACY_URL = 'https://todoenlanube.mx/aviso-de-privacidad/'; // ← pon aquí la URL de tu aviso de privacidad
 var FORM_ENDPOINT = ''; // ← URL de tu webhook/CRM (HubSpot, Zapier, Make, etc.). Vacío = solo muestra confirmación.
 
 (function () {
@@ -49,14 +49,15 @@ var FORM_ENDPOINT = ''; // ← URL de tu webhook/CRM (HubSpot, Zapier, Make, etc
   function mark(el, bad) { el.closest('.f').classList.toggle('bad', bad); }
   form.addEventListener('submit', function (ev) {
     ev.preventDefault();
-    var n = form.nombre, e = form.correo, t = form.telefono, p = form.puesto, k = form.consentimiento;
+    var n = form.nombre, e = form.correo, t = form.telefono, c = form.empresa, p = form.puesto, k = form.consentimiento;
     var vn = n.value.trim().length > 2;
     var ve = /^\S+@\S+\.\S+$/.test(e.value.trim());
     var vt = t.value.replace(/\D/g, '').length >= 10;
+    var vc = c.value.trim().length > 1;
     var vp = p.value.trim().length > 1;
     var vk = k.checked;
-    mark(n, !vn); mark(e, !ve); mark(t, !vt); mark(p, !vp); mark(k, !vk);
-    if (!(vn && ve && vt && vp && vk)) {
+    mark(n, !vn); mark(e, !ve); mark(t, !vt); mark(c, !vc); mark(p, !vp); mark(k, !vk);
+    if (!(vn && ve && vt && vc && vp && vk)) {
       var first = form.querySelector('.f.bad input');
       if (first) first.focus();
       return;
@@ -64,7 +65,7 @@ var FORM_ENDPOINT = ''; // ← URL de tu webhook/CRM (HubSpot, Zapier, Make, etc
 
     var data = {
       nombre: n.value.trim(), correo: e.value.trim(), telefono: t.value.trim(),
-      extension: form.extension.value.trim(), puesto: p.value.trim(),
+      extension: form.extension.value.trim(), empresa: c.value.trim(), puesto: p.value.trim(),
       consentimiento_aviso_privacidad: true,
       origen: location.href, fecha: new Date().toISOString()
     };
